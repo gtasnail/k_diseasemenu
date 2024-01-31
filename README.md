@@ -17,4 +17,4 @@ ensure k_diseases
 ensure k_diseasemenu
 ```
 
-Ingame do the command `/diseases` to check your active diseases diseases
+Ingame do the command `/diseases` to check your active diseases

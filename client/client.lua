@@ -7,9 +7,8 @@ lib.registerMenu({
     title = 'Current Diseases',
     position = 'top-right',
     options = diseases
-}, function(selected, scrollIndex, args)
-    Options(selected)
-end)
+})
+
 
 
 

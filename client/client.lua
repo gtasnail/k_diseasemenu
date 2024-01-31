@@ -1,6 +1,7 @@
 diseases = {}
 
-if (GetResourceState('ox_lib') ~= 'started' or GetResourceState('k_diseases') ~= 'started') then print('^1 Please make sure to install ox_lib and k_disease and make sure they are both started.') return end
+if (GetResourceState('ox_lib') and GetResourceState('k_diseases') ) ~= 'started' then print('^1 Please make sure to install ox_lib and k_disease and make sure they are both started.') return end
+
 
 lib.registerMenu({
     id = 'disease',

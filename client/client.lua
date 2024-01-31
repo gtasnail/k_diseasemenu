@@ -9,14 +9,6 @@ lib.registerMenu({
     options = diseases
 })
 
-
-
-
-function OpenMenu(diseases)
-    lib.setMenuOptions('disease', diseases)
-    lib.showMenu('disease')
-end
-
 function convertToPercentage(number, maxNumber)
     if number < 0 then
         number = 0
@@ -48,5 +40,6 @@ RegisterCommand('diseases', function()
         end
     end
     
-    OpenMenu(diseases)
+    lib.setMenuOptions('disease', diseases)
+    lib.showMenu('disease')
 end)

@@ -36,7 +36,7 @@ RegisterCommand('diseases', function()
     if myDiseases then
         for k,v in pairs(myDiseases) do
             if v.hasDiseases then
-                diseases[#diseases+1] = {label = k, icon = 'disease', progress=convertToPercentage(v.iterations, Config.Diseases[k].iterations), colorScheme='blue', iconAnimation='beat', close=false}
+                diseases[#diseases+1] = {label = k, icon = 'disease', description=math.floor(convertToPercentage(v.iterations, Config.Diseases[k].iterations))..'%',  progress=convertToPercentage(v.iterations, Config.Diseases[k].iterations), colorScheme='blue', iconAnimation='beat', close=false}
             end
         end
         if #diseases == 0 then
